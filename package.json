@@ -1,0 +1,19 @@
+{
+  "name": "svg-joiner",
+  "version": "1.0.0",
+  "description": "Joins a bunch of SVGs into one file",
+  "main": "index.js",
+  "bin": {
+    "svg-joiner": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["svg"],
+  "author": "Victor Bjelkholm <npm@victor.earth>",
+  "license": "MIT",
+  "dependencies": {
+    "simple-svg-tools": "^1.1.10",
+    "svgutils": "^0.13.6"
+  }
+}
