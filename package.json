@@ -9,7 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["svg"],
+  "keywords": [
+    "svg"
+  ],
   "author": "Victor Bjelkholm <npm@victor.earth>",
   "license": "MIT",
   "dependencies": {

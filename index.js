@@ -20,9 +20,14 @@ const wrappedBodies = bodies.map((body, index) => {
   const width = widths[index] + svgMargin
   const marginLeft = currentUsedSpace
   currentUsedSpace = currentUsedSpace + width
-  return `  <svg width="${width}px" x="${marginLeft}px">
-    ${body}
-  </svg>`
+  // Replacing the following to make sure there is no collisions:
+  // id="a" => id="${index}"
+  // url(#a) => url(#${index})
+  let newBody = body
+  newBody = newBody.replace('id="a"', `id="${index}"`)
+  newBody = newBody.replace('url(#a)', `url(#${index})`)
+
+  return `<svg width="${width}px" x="${marginLeft}px">${newBody}</svg>`
 })
 
 const combined = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${currentUsedSpace}" height="40">
