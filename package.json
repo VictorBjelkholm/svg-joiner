@@ -1,6 +1,6 @@
 {
   "name": "svg-joiner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Joins a bunch of SVGs into one file",
   "main": "index.js",
   "bin": {
